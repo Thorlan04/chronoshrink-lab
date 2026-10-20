@@ -2,18 +2,18 @@
   "certification": {
     "system": "ChronoShrink-Lab Industrial Lossless Verifier",
     "version": "1.0.0",
-    "timestamp_utc": "2026-10-20T05:04:11.113771+00:00",
+    "timestamp_utc": "2026-10-20T11:31:18.648058+00:00",
     "sha256_fingerprint": "ec994b390d28f3539e6856599782c4b04e6a29fbd3f2dddd613bc59351f08ba0",
     "lossless_guarantee": "100% Deterministic Bit-Exact Lossless (Zero Drift)",
     "reversibility_verified": true
   },
   "performance_record": {
-    "algorithm_codename": "MedianSlopePredictor_v1_4",
+    "algorithm_codename": "MedianSlopePredictor_v5_4",
     "tested_series_count": 200,
     "total_telemetry_points": 42800,
     "compression_ratio_pct": 63.06,
     "bits_per_sample": 11.821,
-    "cpu_latency_us_per_sample": 3.044,
+    "cpu_latency_us_per_sample": 4.873,
     "gain_vs_delta_1_pct": 0.55,
     "gain_vs_double_delta_gorilla_pct": 2.33,
     "gain_vs_linear_extrapolator_pct": 2.34,
