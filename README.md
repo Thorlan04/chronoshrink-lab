@@ -59,7 +59,7 @@ def predict_next_value(history_window: list, timestamps_delta: list, channel_cor
 
 ### Commercial Package File Structure:
 ```
-DECOUVERTE_A_VENDRE/
+
 ├── algorithme_champion.py        # Production-ready encoder/decoder module (100% bit-exact lossless)
 ├── RAPPORT_EXECUTIF_IOT.md       # Industrial IoT telemetry whitepaper & cellular ROI model
 ├── LICENCE_COMMERCIALE.md        # Royalty-free commercial deployment contract
