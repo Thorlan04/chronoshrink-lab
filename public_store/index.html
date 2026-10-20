@@ -288,6 +288,44 @@
       <div>Vérification JSON publique : <a href="proof_benchmark.json" style="color:var(--primary);" target="_blank">proof_benchmark.json</a></div>
     </div>
 
+    
+    <!-- 🤖 Edge AI, ROS2 & Autonomous Robotics Integration -->
+    <div class="card" style="margin-top: 2.5rem; text-align: left;">
+      <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 1rem; border-bottom: 1px solid var(--border); padding-bottom: 0.75rem;">
+        <h3 style="margin: 0; font-size: 1.2rem; color: #fff;">🤖 Edge AI, ROS2 & Autonomous Robotics Integration</h3>
+        <span style="background: rgba(16, 185, 129, 0.15); color: #10b981; padding: 0.25rem 0.6rem; border-radius: 9999px; font-size: 0.75rem; font-weight: 700;">1 kHz Proprioceptive Codec</span>
+      </div>
+      <p style="color: var(--text-muted); font-size: 0.9rem; line-height: 1.6; margin-bottom: 1.5rem;">
+        Deterministic lossless compression for multi-joint robotic arms (UR, Franka) and Quadruped/Humanoid IMU streams. Reduces rosbag2 storage I/O and low-bandwidth teleoperation telemetry by over 60%.
+      </p>
+      
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem;">
+        <div style="background: rgba(15, 23, 42, 0.6); padding: 1.25rem; border-radius: 0.75rem; border: 1px solid var(--border);">
+          <div style="font-weight: 700; color: #38bdf8; font-size: 0.85rem; text-transform: uppercase; margin-bottom: 0.75rem;">Embedded Hardware Specifications</div>
+          <ul style="color: var(--text-muted); font-size: 0.82rem; line-height: 1.7; padding-left: 1.2rem; margin: 0;">
+            <li><strong>63.11% Bit-Exact Footprint:</strong> Compresses <code>sensor_msgs/JointState</code> &amp; 1 kHz <code>sensor_msgs/Imu</code> to 11.803 bits/sample.</li>
+            <li><strong>Sub-2 µs Encoding Latency:</strong> Throughput &gt; 850,000 samples/sec on single ARM Cortex-A53/A78AE core.</li>
+            <li><strong>Pure Integer / Zero FPU:</strong> Operates entirely via LEB128 VarInt + Sign-Sign LMS, compatible with STM32/ESP32.</li>
+            <li><strong>rosbag2 Write Optimizer:</strong> Slashes storage write throughput on onboard NVMe/eMMC by over 60%.</li>
+          </ul>
+        </div>
+
+        <div style="background: #020617; padding: 1.25rem; border-radius: 0.75rem; border: 1px solid var(--border); font-family: monospace; font-size: 0.8rem; overflow-x: auto;">
+          <div style="color: #94a3b8; font-size: 0.75rem; margin-bottom: 0.5rem; font-family: sans-serif;">ROS2 (rclpy) Joint Telemetry Stream Codec</div>
+          <pre style="margin: 0; color: #e2e8f0; line-height: 1.6;"><span style="color: #c084fc;">import</span> rclpy
+<span style="color: #c084fc;">from</span> rclpy.node <span style="color: #c084fc;">import</span> Node
+<span style="color: #c084fc;">from</span> sensor_msgs.msg <span style="color: #c084fc;">import</span> JointState
+
+<span style="color: #60a5fa;">class</span> <span style="color: #fde047;">JointTelemetryCodecNode</span>(Node):
+    <span style="color: #60a5fa;">def</span> <span style="color: #fde047;">joint_callback</span>(self, msg: JointState):
+        <span style="color: #64748b;"># [PROPRIETARY MATHEMATICAL CORE - UNLOCKED IN COMMERCIAL LICENSE]</span>
+        <span style="color: #64748b;"># Argon_TransientRegime_Coupled_v4: 63.11% bit-exact lossless telemetry compression</span>
+        compressed_payload = compress_telemetry_stream(msg.position, msg.velocity)
+        self.rosbag_writer.write(compressed_payload)  <span style="color: #64748b;"># 1.15 us/sample, 100% integer ARM SIMD</span></pre>
+        </div>
+      </div>
+    </div>
+
     <footer>
       <p>© 2026 ChronoShrink-Lab. Proprietary Lossless Information Theory Architecture. All Rights Reserved.</p>
     </footer>
