@@ -2,23 +2,23 @@
   "certification": {
     "system": "ChronoShrink-Lab Industrial Lossless Verifier",
     "version": "1.0.0",
-    "timestamp_utc": "2026-10-20T16:58:18.156154+00:00",
-    "sha256_fingerprint": "2447378f2abe87ec0a9cb6dfb7f8ec96a599453a92c2c6e63c64faf988f84ced",
+    "timestamp_utc": "2026-10-20T17:09:22.533213+00:00",
+    "sha256_fingerprint": "46edcdf0360bb4629cef1fd7efad1ec25ae5b3766e46ddf882bae519de4d3be8",
     "lossless_guarantee": "100% Deterministic Bit-Exact Lossless (Zero Drift)",
     "reversibility_verified": true
   },
   "performance_record": {
-    "algorithm_codename": "NormalizedIntLMS_MedianBlend_v5_2",
+    "algorithm_codename": "TransientRegimeSwitch_v4_3",
     "tested_series_count": 200,
     "total_telemetry_points": 42800,
-    "compression_ratio_pct": 63.19,
-    "bits_per_sample": 11.779,
-    "cpu_latency_us_per_sample": 2.758,
-    "gain_vs_delta_1_pct": 0.91,
-    "gain_vs_double_delta_gorilla_pct": 2.69,
-    "gain_vs_linear_extrapolator_pct": 2.69,
-    "cellular_bandwidth_reduction_pct": 63.19,
-    "cloud_storage_reduction_pct": 63.19
+    "compression_ratio_pct": 63.2,
+    "bits_per_sample": 11.777,
+    "cpu_latency_us_per_sample": 4.603,
+    "gain_vs_delta_1_pct": 0.92,
+    "gain_vs_double_delta_gorilla_pct": 2.7,
+    "gain_vs_linear_extrapolator_pct": 2.7,
+    "cellular_bandwidth_reduction_pct": 63.2,
+    "cloud_storage_reduction_pct": 63.2
   },
   "commercial": {
     "license_type": "ChronoShrink Industrial Commercial License (Royalty-Free Deployment)",
@@ -28,6 +28,6 @@
       "Cloud Ingestion Pipelines (Kafka, InfluxDB, Snowflake, AWS)"
     ],
     "pricing_portal": "https://buy.polar.sh/polar_cl_PX61JLe4lFxt77DzVTMRaOXAoEVrmiaAHHU884EuFjX",
-    "intellectual_property_notice": "PROPRIETARY AND CONFIDENTIAL. The underlying mathematical prediction weights and formula logic are protected trade secrets. Proof of prior art is legally established by SHA-256 fingerprint 2447378f2abe87ec0a9cb6dfb7f8ec96a599453a92c2c6e63c64faf988f84ced."
+    "intellectual_property_notice": "PROPRIETARY AND CONFIDENTIAL. The underlying mathematical prediction weights and formula logic are protected trade secrets. Proof of prior art is legally established by SHA-256 fingerprint 46edcdf0360bb4629cef1fd7efad1ec25ae5b3766e46ddf882bae519de4d3be8."
   }
 }
