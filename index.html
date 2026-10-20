@@ -138,8 +138,8 @@
       </div>
       <div class="stat-card champion">
         <div class="stat-title" style="color:var(--primary);" data-i18n="stat_champ_title">ChronoShrink Champion</div>
-        <div class="stat-val" style="color:var(--primary);">11.821 <span style="font-size:1.2rem; font-weight:400; color:var(--primary);">bps</span></div>
-        <div class="stat-sub" style="color:var(--accent); font-weight:800;">63.06% RÉDUCTION GLOBALE</div>
+        <div class="stat-val" style="color:var(--primary);">11.779 <span style="font-size:1.2rem; font-weight:400; color:var(--primary);">bps</span></div>
+        <div class="stat-sub" style="color:var(--accent); font-weight:800;">63.19% RÉDUCTION GLOBALE</div>
       </div>
     </section>
 
@@ -195,11 +195,11 @@
             <td>100% Exact</td>
           </tr>
           <tr class="row-champion">
-            <td>🏆 ChronoShrink™ (MedianSlopePredictor_v5_4)</td>
-            <td>63,242.0 octets</td>
-            <td>63.06%</td>
-            <td>11.821 bps</td>
-            <td>4.924 µs</td>
+            <td>🏆 ChronoShrink™ (NormalizedIntLMS_MedianBlend_v5_2)</td>
+            <td>63,017.0 octets</td>
+            <td>63.19%</td>
+            <td>11.779 bps</td>
+            <td>2.758 µs</td>
             <td>100% BIT-EXACT</td>
           </tr>
         </tbody>
@@ -233,7 +233,7 @@
 
           <div class="calc-input-group">
             <label data-i18n="calc_ratio_label">Taux d'Économie ChronoShrink Appliqué :</label>
-            <div style="font-size:1.4rem; font-weight:800; color:var(--primary);">63.06%</div>
+            <div style="font-size:1.4rem; font-weight:800; color:var(--primary);">63.19%</div>
           </div>
         </div>
 
@@ -248,6 +248,32 @@
       </div>
     </div>
 
+    <!-- Enterprise Deliverable Package Tree & 8-Line Python Integration Preview -->
+    <div class="section-title">
+      <h2>Livrable Industriel & Intégration Python / C-Edge</h2>
+      <p>Déploiement immédiat après validation de la licence commerciale Polar.sh (Zéro dépendance externe).</p>
+    </div>
+
+    <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(340px, 1fr)); gap:24px; margin-bottom:64px;">
+      <div class="stat-card" style="text-align:left;">
+        <div class="stat-title" style="color:var(--primary);">Contenu du Package (DECOUVERTE_A_VENDRE/)</div>
+        <pre style="background:#090d16; border:1px solid var(--card-border); border-radius:8px; padding:16px; font-family:monospace; font-size:0.82rem; color:#e2e8f0; overflow-x:auto; margin-top:12px;">DECOUVERTE_A_VENDRE/
+├── algorithme_champion.py         # Prédicteur entier Bit-Exact + Codec VarInt
+├── RAPPORT_EXECUTIF_IOT_CLOUD.md  # Audit de réversibilité & ROI Télécom
+└── PROSPECTS_DU_JOUR.md           # Dossier d'intégration industrielle</pre>
+      </div>
+      <div class="stat-card" style="text-align:left;">
+        <div class="stat-title" style="color:var(--accent);">Signature d'Intégration Python (8 Lignes)</div>
+        <pre style="background:#090d16; border:1px solid var(--card-border); border-radius:8px; padding:16px; font-family:monospace; font-size:0.82rem; color:#34d399; overflow-x:auto; margin-top:12px;">def predict_next_value(
+    history_window: list[int],
+    timestamps_delta: list[int],
+    channel_correlations: list[list[int]]
+) -> int:
+    # [PROPRIETARY MATHEMATICAL CORE - UNLOCKED IN COMMERCIAL LICENSE]
+    return int(optimal_bit_exact_integer_prediction)</pre>
+      </div>
+    </div>
+
     <!-- Cryptographic Proof Box -->
     <div class="section-title">
       <h2 data-i18n="crypto_title">Preuve Cryptographique d'Antériorité</h2>
@@ -256,9 +282,9 @@
 
     <div class="crypto-box">
       <div><strong>[CERTIFICAT D'ANTÉRIORITÉ CHRONOSHRINK-LAB]</strong></div>
-      <div style="margin-top:6px;">Algorithme : <span>MedianSlopePredictor_v5_4</span></div>
-      <div>Horodatage UTC : <span>2026-10-20T16:56:30.490134+00:00</span></div>
-      <div>SHA-256 : <span>ec994b390d28f3539e6856599782c4b04e6a29fbd3f2dddd613bc59351f08ba0</span></div>
+      <div style="margin-top:6px;">Algorithme : <span>NormalizedIntLMS_MedianBlend_v5_2</span></div>
+      <div>Horodatage UTC : <span>2026-10-20T16:58:18.156154+00:00</span></div>
+      <div>SHA-256 : <span>2447378f2abe87ec0a9cb6dfb7f8ec96a599453a92c2c6e63c64faf988f84ced</span></div>
       <div>Vérification JSON publique : <a href="proof_benchmark.json" style="color:var(--primary);" target="_blank">proof_benchmark.json</a></div>
     </div>
 
@@ -269,7 +295,7 @@
 
   <script>
     let currentLang = 'fr';
-    const ratioVal = 63.06 / 100.0;
+    const ratioVal = 63.19 / 100.0;
 
     const translations = {
       fr: {
