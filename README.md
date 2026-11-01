@@ -22,7 +22,7 @@ Transmitting uncompressed 32-bit/64-bit numerical streams triggers massive recur
 For an industrial fleet of **50,000 smart connected devices** uploading 100 GB of telemetry daily:
 - **Raw Uncompressed Ingest**: 36.5 TB / year = **$54,750 / year** in cellular data + $32,000 in cloud storage.
 - **Facebook Gorilla (62.18% compression)**: Reduces data to 13.8 TB / year.
-- **ChronoShrink Champion (`WeinbergerLOCO_IntLMS_v299_1`) (63.58% compression)**: Saves an extra **1.1 TB of payload** beyond Delta-1 and **2.1 TB beyond Gorilla**.
+- **ChronoShrink Champion (`CompositeWeinbergerLMS_v2314_5`) (63.58% compression)**: Saves an extra **1.1 TB of payload** beyond Delta-1 and **2.1 TB beyond Gorilla**.
 - **Direct Annual Savings**: **$53,000+ / year** in recurring connectivity and database storage costs, with zero loss of precision.
 
 ---
@@ -36,7 +36,7 @@ Evaluated across **200 diverse industrial sensor datasets** (vibration, temperat
 | **Linear Extrapolator + VarInt** | `62.18%` | `12.104 bps` | `64,756 B` | -1.8% vs Delta-1 | Common Baseline |
 | **Facebook Gorilla Double-Delta** | `62.18%` | `12.104 bps` | `64,755 B` | -1.8% vs Delta-1 | Industry Reference |
 | **Delta-1 + VarInt** *(Edge Industry Base)* | `62.85%` | `11.887 bps` | `63,594 B` | Baseline (0.0%) | Dominant Embedded Base |
-| **ChronoShrink Champion (`WeinbergerLOCO_IntLMS_v299_1`)** | **`63.58%`** | **`11.654 bps`** | **`62,351 B`** | **+1.95% vs Delta-1 (+3.71% vs Gorilla)** | **CERTIFIED CHAMPION** |
+| **ChronoShrink Champion (`CompositeWeinbergerLMS_v2314_5`)** | **`63.58%`** | **`11.654 bps`** | **`62,351 B`** | **+1.95% vs Delta-1 (+3.71% vs Gorilla)** | **CERTIFIED CHAMPION** |
 
 ### Mathematical Core Innovations:
 1. **Integer Adaptive Linear LMS Prediction**: 64-bit fixed-point Sign-Sign LMS filter that tracks non-stationary sensor trends without floating-point rounding errors.
